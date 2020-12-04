@@ -113,8 +113,8 @@ table.blueTable tfoot .links a{
 }
 </style>   
     
-    
-    <table class="blueTable"><thead><tr><th>head1</th></tr></thead><tbody><tr><td>""" + str(predict_power_output(int(text)))  + """ </td></tr></tbody></tr></table>
+    <img src="static/images/Wind_turbine_Holderness.jpg" alt="https://commons.wikimedia.org/wiki/File:Wind_turbine_Holderness.jpg">
+    <table class="blueTable"><thead><tr><th><centre>Predict Energy Output From Wind Speed of """ + text + """ mph</centre></th></tr></thead><tbody><tr><td>""" + str(predict_power_output(int(text)))  + """ </td></tr></tbody></tr></table>
     <img src="static/images/plot.png" alt="A Matplotlibplot">
     <button onclick="goBack()">Go Back</button>
 
@@ -124,4 +124,5 @@ function goBack() {
 }
 </script>
     """ 
+
 
