@@ -47,8 +47,8 @@ def receive_text_from_form(text):
 
     #if a user inputs a wind speed between 0 - 5 mph, they will get a linear prediction from wind speed data betwween 0 and 5 mph.
 
-    if text > 0 and text <= 5:
-        zero_to_five = cleansed_data_2.loc[(cleansed_data_2['speed'] > 0) & (cleansed_data_2['speed']<= 5)]
+    if text > 0.275 and text <= 5:
+        zero_to_five = cleansed_data_2.loc[(cleansed_data_2['speed'] > 0.275) & (cleansed_data_2['speed']<= 5)]
         return do_linear_regression(zero_to_five,text)
 
 
@@ -73,7 +73,6 @@ def receive_text_from_form(text):
 
         #if a user inputs a wind speed between 20 - 25 mph, they will get a linear prediction from wind speed data betwween 20 and 25 mph.
 
-    if text > 20 and text <= 25:
-        greater_than_fifteen_to_twenty = cleansed_data_2.loc[(cleansed_data_2['speed'] > 20) & (cleansed_data_2['speed']<= 25)]
-        do_linear_regression(greater_than_twenty_to_twenty_five,text)
-
+    if text > 20 and text <= 24.498:
+        greater_than_twenty_to_twenty_five = cleansed_data_2.loc[(cleansed_data_2['speed'] > 20) & (cleansed_data_2['speed']<= 24.498)]
+        return do_linear_regression(greater_than_twenty_to_twenty_five,text)
